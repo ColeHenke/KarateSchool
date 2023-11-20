@@ -13,7 +13,7 @@ namespace KarateSchool
         private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
         
         //TODO - replace with 
-        private int id = 4; //placeholder id
+        private int id = 1; //placeholder id
 
         private DataClasses1DataContext dbcon;
         protected void Page_Load(object sender, EventArgs e)

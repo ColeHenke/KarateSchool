@@ -44,12 +44,6 @@ namespace KarateSchool
     partial void DeleteSection(Section instance);
     #endregion
 		
-		public DataClasses1DataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["KarateSchool_1_ConnectionString"].ConnectionString, mappingSource)
-		{
-			OnCreated();
-		}
-		
 		public DataClasses1DataContext(string connection) : 
 				base(connection, mappingSource)
 		{
