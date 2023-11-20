@@ -14,11 +14,11 @@ namespace KarateSchool
     public partial class Instructor1 : System.Web.UI.Page
     {
         DataClasses1DataContext dbcon;
-        string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DL\\Carter\\Assignment4\\App_Data\\KarateSchool(1).mdf;Integrated Security=True;Connect Timeout=30";
+        string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
 
         private void gridLoad()
         {
-            int logInstructor = 1;
+            int logInstructor = 3;
             dbcon = new DataClasses1DataContext(connString);
             SqlConnection conn = new SqlConnection(connString);
             string sqlstring = "select Section.SectionName, Member.MemberFirstName, Member.MemberLastName " +
