@@ -262,8 +262,8 @@ ServiceFabricBackup/
 *.rptproj.bak
 
 # SQL Server files
-#*.mdf
-*.ldf
+*.mdf
+#*.ldf
 *.ndf
 
 # Business Intelligence projects
@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/App_Data/KarateSchool(1).mdf
