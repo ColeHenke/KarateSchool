@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -10,15 +11,15 @@ namespace KarateSchool
 {
     public partial class Member1 : System.Web.UI.Page
     {
-        private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
-        
+        string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DL\\Carter\\Assignment4Retry\\App_Data\\KarateSchool(1).mdf;Integrated Security=True;Connect Timeout=30";
+
         //TODO - replace with 
         private int id = 1; //placeholder id
 
         private DataClasses1DataContext dbcon;
         protected void Page_Load(object sender, EventArgs e)
         {
-            dbcon = new DataClasses1DataContext(conString);
+            dbcon = new DataClasses1DataContext(connString);
 
             var totalLifetimePayment = (from section in dbcon.Sections
                                        where section.Member_ID == id 
