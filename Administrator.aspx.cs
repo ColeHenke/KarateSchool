@@ -9,7 +9,7 @@ namespace KarateSchool
 {
     public partial class Administrator : System.Web.UI.Page
     {
-        private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
+        private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DL\\Carter\\Assignment4Retry2\\App_Data\\KarateSchool(1).mdf;Integrated Security=True;Connect Timeout=30";
         private DataClasses1DataContext dbcon;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -187,7 +187,7 @@ namespace KarateSchool
 
         protected void addSectionButton_Click(object sender, EventArgs e)
         {
-            string
+            //string
         }
 
         protected void deleteSectionButton_Click(object sender, EventArgs e)

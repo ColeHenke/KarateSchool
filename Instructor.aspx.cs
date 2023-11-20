@@ -14,7 +14,7 @@ namespace KarateSchool
     public partial class Instructor1 : System.Web.UI.Page
     {
         DataClasses1DataContext dbcon;
-        string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
+        private string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DL\\Carter\\Assignment4Retry2\\App_Data\\KarateSchool(1).mdf;Integrated Security=True;Connect Timeout=30";
 
         private void gridLoad()
         {
