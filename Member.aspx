@@ -12,7 +12,7 @@
             Hi,
             <asp:LoginName ID="LoginName1" runat="server" />
             <br />
-            <asp:GridView ID="GridView1" runat="server">
+            <asp:GridView ID="memberGridView" runat="server">
             </asp:GridView>
             <br />
             <br />

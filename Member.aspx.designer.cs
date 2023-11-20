@@ -33,12 +33,12 @@ namespace KarateSchool
         protected global::System.Web.UI.WebControls.LoginName LoginName1;
 
         /// <summary>
-        /// GridView1 control.
+        /// memberGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView memberGridView;
     }
 }
