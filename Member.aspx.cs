@@ -35,6 +35,14 @@ namespace KarateSchool
                                         section.SectionFee
                                     };
 
+            firstNameLabel.Text = (from member in dbcon.Members
+                                  where Logon.id == member.Member_UserID
+                                  select member.MemberFirstName).First().ToString();
+
+            lastNameLabel.Text = (from member in dbcon.Members
+                                   where Logon.id == member.Member_UserID
+                                   select member.MemberLastName).First().ToString();
+
             memberGridView.DataSource = memberSectionInfo;
             memberGridView.DataBind();
         }

@@ -13,6 +13,9 @@
             <asp:LoginName ID="LoginName1" runat="server" />
             <br />
             <br />
+            <p style="display: inline";>Info for </p>
+            <asp:Label ID="firstNameLabel" runat="server"></asp:Label>
+            <asp:Label ID="lastNameLabel" runat="server"></asp:Label>
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>
         </div>

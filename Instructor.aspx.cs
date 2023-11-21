@@ -38,6 +38,14 @@ namespace KarateSchool
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            dbcon = new DataClasses1DataContext(connString);
+            firstNameLabel.Text = (from instructor in dbcon.Instructors
+                                   where Logon.id == instructor.InstructorID
+                                   select instructor.InstructorFirstName).First().ToString();
+
+            lastNameLabel.Text = (from instructor in dbcon.Instructors
+                                  where Logon.id == instructor.InstructorID
+                                  select instructor.InstructorLastName).First().ToString();
             gridLoad();
         }
     }
