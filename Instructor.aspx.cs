@@ -18,12 +18,15 @@ namespace KarateSchool
 
         private void gridLoad()
         {
-            int logInstructor = 3;
+            //make a connection to the database
             dbcon = new DataClasses1DataContext(connString);
             SqlConnection conn = new SqlConnection(connString);
+
+            //query string
             string sqlstring = "select Section.SectionName, Member.MemberFirstName, Member.MemberLastName " +
                 "from Section inner join Member on Section.Member_ID = Member.Member_UserID where Section.Instructor_ID = " +
-                logInstructor;
+                Logon.id;
+
             SqlCommand cmd = new SqlCommand(sqlstring, conn);
             conn.Open();
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
@@ -35,7 +38,6 @@ namespace KarateSchool
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //LoginName1.
             gridLoad();
         }
     }
