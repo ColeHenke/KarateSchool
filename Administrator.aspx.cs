@@ -10,7 +10,7 @@ namespace KarateSchool
 {
     public partial class Administrator : System.Web.UI.Page
     {
-        private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DL\\Carter\\Assignment4Retry2\\App_Data\\KarateSchool(1).mdf;Integrated Security=True;Connect Timeout=30";
+        private string conString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\coleh\\OneDrive\\Desktop\\CSCI 213\\Module 4\\KarateSchool\\App_Data\\KarateSchool(1).mdf\";Integrated Security=True;Connect Timeout=30";
         private DataClasses1DataContext dbcon;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace KarateSchool
                 throw new Exception(ex.Message);
             }
 
-
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void deleteMemberButton_Click(object sender, EventArgs e)
@@ -159,6 +159,8 @@ namespace KarateSchool
             {
                 throw new Exception(ex.Message);
             }
+
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void deleteInstructorButton_Click(object sender, EventArgs e)
@@ -204,6 +206,8 @@ namespace KarateSchool
             {
                 throw new Exception(ex.Message);
             }
+
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void addInstructorButton_Click(object sender, EventArgs e)
@@ -260,6 +264,8 @@ namespace KarateSchool
             {
                 throw new Exception(ex.Message);
             }
+
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void addSectionButton_Click(object sender, EventArgs e)
@@ -267,7 +273,6 @@ namespace KarateSchool
             /*Mapping all of the data entered into the textboxes into variables to create
              a section object to be added to the database*/
 
-            int sectionID = int.Parse(sectionIdTextBox.Text);
             string sectionName = sectionNameTextBox.Text;
             DateTime sectionSD = DateTime.Parse(sectionStartDateTextBox.Text);
             int memberID = int.Parse(memberInSectionTextBox.Text);
@@ -282,7 +287,6 @@ namespace KarateSchool
                 //creating the section object ot add to the Database
                 Section newSection = new Section
                 {
-                    SectionID = sectionID,
                     SectionName = sectionName,
                     SectionStartDate = sectionSD,
                     Member_ID = memberID,
@@ -301,6 +305,8 @@ namespace KarateSchool
                     throw new Exception(ex.Message);
                 }
             }
+
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void deleteSectionButton_Click(object sender, EventArgs e)
@@ -328,6 +334,8 @@ namespace KarateSchool
             {
                 throw new Exception(ex.Message);
             }
+
+            Response.Redirect(Request.RawUrl);
         }
     }
 }

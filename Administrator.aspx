@@ -87,9 +87,6 @@
                 </asp:GridView>
                 <div class="auto-style2">
                     <br />
-                    <asp:Label runat="server" Text="Section ID:" ID="sectionIdLabel"></asp:Label>
-                    <asp:TextBox runat="server" ID="sectionIdTextBox"></asp:TextBox><br />
-
                     <asp:Label runat="server" Text="Section Name:" ID="sectionNameLabel"></asp:Label>
                     <asp:TextBox runat="server" ID="sectionNameTextBox"></asp:TextBox><br />
 
@@ -105,7 +102,10 @@
                     <asp:Label runat="server" Text="Section Fee:" ID="sectionFeeLabel"></asp:Label>
                     <asp:TextBox runat="server" ID="sectionFeeTextBox"></asp:TextBox><br />
 
-                    <asp:Button ID="addSectionButton" runat="server" Text="Add" OnClick="addSectionButton_Click" />
+                    <asp:Button ID="addSectionButton" runat="server" Text="Add" OnClick="addSectionButton_Click" /><br />
+
+                    <asp:Label runat="server" Text="Section ID:" ID="sectionIdLabel"></asp:Label>
+                    <asp:TextBox runat="server" ID="sectionIdTextBox"></asp:TextBox><br />
                     <asp:Button ID="deleteSectionButton" runat="server" Text="Delete" OnClick="deleteSectionButton_Click" />
                 </div>
             </div>
