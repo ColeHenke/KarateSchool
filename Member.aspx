@@ -11,7 +11,10 @@
         <div>
             Hi,
             <asp:LoginName ID="LoginName1" runat="server" />
+            <p style="display: inline;"> -- Your running total is: </p>
+            <asp:Label ID="totalLabel" runat="server"></asp:Label>
             <br />
+            
             <asp:GridView ID="memberGridView" runat="server">
             </asp:GridView>
             <br />

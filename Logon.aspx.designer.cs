@@ -11,7 +11,7 @@ namespace KarateSchool
 {
 
 
-    public partial class Member1
+    public partial class Logon
     {
 
         /// <summary>
@@ -24,30 +24,12 @@ namespace KarateSchool
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LoginName1 control.
+        /// Login2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginName LoginName1;
-
-        /// <summary>
-        /// totalLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label totalLabel;
-
-        /// <summary>
-        /// memberGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView memberGridView;
+        protected global::System.Web.UI.WebControls.Login Login2;
     }
 }
